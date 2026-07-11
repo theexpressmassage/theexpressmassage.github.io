@@ -512,19 +512,7 @@ h3 {
   }
 
 
-  .rooms,
-  .room-gallery {
-    grid-template-columns: 1fr;
-  }
 
-  .room-photo.detail {
-    transform: none;
-  }
-
-  .floating-book {
-    left: 18px;
-    right: 18px;
-  }
   .section-heading {
     display: block;
   }
@@ -534,9 +522,62 @@ h3 {
   }
 }
 
+
+@media (max-width: 820px) {
+  body {
+    padding-bottom: 76px;
+  }
+
+  .rooms {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .rooms .button.primary {
+    min-height: 44px;
+    padding: 10px 16px;
+  }
+
+  .room-gallery {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 2px 18px 18px 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .room-photo {
+    flex: 0 0 min(76vw, 300px);
+    height: 188px;
+    scroll-snap-align: start;
+  }
+
+  .room-photo.wide,
+  .room-photo.detail {
+    aspect-ratio: auto;
+    transform: none;
+  }
+
+  .room-photo.detail {
+    flex-basis: min(62vw, 240px);
+  }
+
+  .floating-book {
+    display: none;
+  }
+
+  .service-card {
+    min-height: auto;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+
+
+
 
 
 
