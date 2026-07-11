@@ -1,17 +1,22 @@
 const translations = {
   en: {
-    nav: { services: "Services", how: "How it works", contact: "Contact" },
+    nav: { services: "Services", rooms: "Rooms", how: "How it works", contact: "Contact" },
     hero: {
       eyebrow: "24 hour massage home service in Jakarta",
       title: "The Express Massage",
       copy: "Relax in your hotel, apartment, or home with a professional massage visit arranged quickly by WhatsApp."
     },
-    cta: { whatsapp: "Book on WhatsApp", menu: "View menu", ask: "Ask availability" },
+    cta: { whatsapp: "Book on WhatsApp", menu: "View menu", ask: "Ask availability", bookNow: "BOOK NOW" },
     facts: { hoursLabel: "Hours", hours: "24 hours", areaLabel: "Area", area: "Jakarta", bookingLabel: "Booking", booking: "WhatsApp" },
     intro: {
       kicker: "Massage nearby, when you need it",
       title: "A calm spa visit without leaving your room.",
       copy: "The Express Massage is built for Jakarta visitors and residents searching for massage near me, massage 24 hours, massage home service, or traditional massage in Jakarta."
+    },
+    rooms: {
+      kicker: "Real space",
+      title: "A clean, quiet setting for focused relaxation.",
+      copy: "See the room atmosphere before you book. The Express Massage keeps the experience simple: calm lighting, prepared treatment space, and fast WhatsApp confirmation."
     },
     services: { kicker: "Menu", title: "Choose your treatment", note: "Prices and therapist availability can be confirmed directly by WhatsApp." },
     service: {
@@ -39,18 +44,23 @@ const translations = {
     footer: { copy: "24 hour massage home service in Jakarta." }
   },
   id: {
-    nav: { services: "Layanan", how: "Cara pesan", contact: "Kontak" },
+    nav: { services: "Layanan", rooms: "Ruangan", how: "Cara pesan", contact: "Kontak" },
     hero: {
       eyebrow: "Layanan pijat panggilan 24 jam di Jakarta",
       title: "The Express Massage",
       copy: "Nikmati pijat profesional di hotel, apartemen, atau rumah Anda dengan pemesanan cepat melalui WhatsApp."
     },
-    cta: { whatsapp: "Pesan via WhatsApp", menu: "Lihat menu", ask: "Tanya jadwal" },
+    cta: { whatsapp: "Pesan via WhatsApp", menu: "Lihat menu", ask: "Tanya jadwal", bookNow: "BOOK NOW" },
     facts: { hoursLabel: "Jam", hours: "24 jam", areaLabel: "Area", area: "Jakarta", bookingLabel: "Pesan", booking: "WhatsApp" },
     intro: {
       kicker: "Pijat terdekat saat Anda membutuhkan",
       title: "Pengalaman spa tenang tanpa perlu keluar kamar.",
       copy: "The Express Massage dibuat untuk pengunjung dan warga Jakarta yang mencari massage near me, massage 24 hours, massage home service, atau traditional massage di Jakarta."
+    },
+    rooms: {
+      kicker: "Ruang asli",
+      title: "Tempat bersih dan tenang untuk relaksasi yang fokus.",
+      copy: "Lihat suasana ruangan sebelum memesan. The Express Massage menjaga pengalaman tetap sederhana: cahaya yang tenang, ruang perawatan siap pakai, dan konfirmasi cepat via WhatsApp."
     },
     services: { kicker: "Menu", title: "Pilih perawatan Anda", note: "Harga dan ketersediaan terapis dapat dikonfirmasi langsung melalui WhatsApp." },
     service: {
@@ -78,18 +88,23 @@ const translations = {
     footer: { copy: "Layanan pijat panggilan 24 jam di Jakarta." }
   },
   ja: {
-    nav: { services: "メニュー", how: "予約方法", contact: "連絡先" },
+    nav: { services: "メニュー", rooms: "空間", how: "予約方法", contact: "連絡先" },
     hero: {
       eyebrow: "ジャカルタの24時間出張マッサージ",
       title: "The Express Massage",
       copy: "ホテル、アパート、ご自宅で受けられるプロのマッサージをWhatsAppからすぐに予約できます。"
     },
-    cta: { whatsapp: "WhatsAppで予約", menu: "メニューを見る", ask: "空き状況を確認" },
+    cta: { whatsapp: "WhatsAppで予約", menu: "メニューを見る", ask: "空き状況を確認", bookNow: "BOOK NOW" },
     facts: { hoursLabel: "営業時間", hours: "24時間", areaLabel: "対応エリア", area: "ジャカルタ", bookingLabel: "予約", booking: "WhatsApp" },
     intro: {
       kicker: "近くで今すぐマッサージ",
       title: "部屋から出ずに、落ち着いたSPA体験を。",
       copy: "The Express Massageは、ジャカルタで massage near me、massage 24 hours、massage home service、traditional massage を探す旅行者と在住者向けの出張マッサージです。"
+    },
+    rooms: {
+      kicker: "実際の空間",
+      title: "集中してリラックスできる、清潔で静かな環境。",
+      copy: "予約前に空間の雰囲気をご確認ください。落ち着いた照明、準備された施術スペース、WhatsAppでの素早い確認を大切にしています。"
     },
     services: { kicker: "メニュー", title: "トリートメントを選ぶ", note: "料金とセラピストの空き状況はWhatsAppで直接確認できます。" },
     service: {
@@ -152,3 +167,4 @@ document.querySelectorAll("[data-lang]").forEach((button) => {
 
 document.getElementById("year").textContent = new Date().getFullYear();
 setLanguage(getInitialLanguage());
+
